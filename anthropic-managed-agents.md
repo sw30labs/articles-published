@@ -1,49 +1,33 @@
-Nicolas Cravino
-   • You
-AI Engineer | Cybersecurity | Agentic AI Innovator | Author | 20+ Years in Finance & Consulting
-3mo •  
+# Anthropic Managed Agents and the Rise of Sovereign Skills
 
-Every major software era had a gatekeeper. SW1.0 needed sysadmins. SW2.0 needed web developers. SW3.0 needs people who deeply understand the problem — and that's everyone. But most organizations are about to automate the wrong things — because the people who know what actually needs fixing still can't build the fix themselves. SW3.0 changes that.
+*Anthropic’s managed agents announcement is important, but the real strategic shift is that the unit of value is moving from code to capability.*
 
-This week, Anthropic launched Claude Managed Agents — a fully hosted infrastructure layer for running production AI agents at scale. Sandboxing, orchestration, checkpointing, governance. All managed. All cloud-hosted.
+Every major software era had a gatekeeper. SW1.0 needed sysadmins. SW2.0 needed web developers. SW3.0 needs people who understand the problem deeply — and that is increasingly everyone.
 
-I wasn't surprised. I was validated. Fifty weeks of nights and weekends will do that.
+This week Anthropic launched Claude Managed Agents, a hosted infrastructure layer for running production AI agents at scale. The announcement includes sandboxing, orchestration, checkpointing, and governance. It is a serious step forward.
 
-For the past year I've been building exactly this — not on Anthropic's cloud, but on my clients' terms. Three production workloads, running non-stop for nearly 50 weeks, now ported into portable .skill files and executing autonomously. One client received the full stack — model, runtime, Skills library — to run on their own premises. No vendor dependency. No call-home requirement. Full sovereignty.
+I was not surprised. I was validated. Fifty weeks of nights and weekends will do that.
 
-And last week? I delivered a pilot to a new prospect as a single .skill file. The prototype IS the product.
+For the past year I have been building around the same idea, but on different terms. I have ported three production workloads into portable .skill files and run them autonomously for nearly 50 weeks. One client received the full stack — model, runtime, and skills library — to run on their own premises with no vendor dependency and no call-home requirement.
 
-Here's the thing Managed Agents can't offer yet: data sovereignty. All traffic runs through Anthropic's public infrastructure. No VPC peering. No private endpoints. For regulated industries — financial services, healthcare, government — that's a hard stop.
+That is the strategic gap I think matters most.
 
-That's the gap my vision fills.
+## The missing layer: sovereignty
 
-The fundamental unit of SW3.0 is the Skill: a portable, composable, version-controlled knowledge module any agent can pick up and run. Anthropic just said so in their own docs. You don't need to write production code to build one. You need to understand the problem deeply. That's a citizen developer's superpower.
+Managed Agents is the hosted path. It is useful and significant. But it still runs through Anthropic’s public infrastructure. There is no VPC peering and no private endpoint model for many regulated workloads.
 
-Managed Agents is the hosted path.
-Sovereign Skills are the enterprise path.
-Both point to the same destination.
+For financial services, healthcare, and government, that is a hard stop.
+
+This is where sovereign skills become important. The skill is the portable, composable, version-controlled knowledge module that an agent can pick up and run. Anthropic’s own documentation points in that direction. You do not need to write production code to build one. You need to understand the problem deeply.
+
+## The bigger shift
 
 The inference layer is becoming the primary operating layer. The people who understand the work — not just the code — are becoming the builders.
 
-SW3.0 isn't coming. It's already in production.
+That is why SW3.0 feels different. It is not just about automation. It is about moving the locus of creation closer to the people who understand the workflow best.
 
-🔗 Anthropic announcement: https://lnkd.in/er8nGHNf
-⚙️ Building this under the sw30labs banner — more coming soon.
+Managed Agents and sovereign skills are not opposites. They point to the same destination from different starting points.
 
-hashtag
-hashtag#SW30 hashtag#AIAgents hashtag#CitizenDeveloper hashtag#EnterpriseAI hashtag#ClaudeAI hashtag#AIStrategy hashtag#FutureOfWork
- Anthropic logo
-Scaling Managed Agents: Decoupling the brain from the hands
-anthropic.com
-likeloveinsightful
-12
+Anthropic announcement: https://lnkd.in/er8nGHNf
 
-Like
-
-Comment
- 
-Repost
- 
-Send
-601 impressions
-View analytics
+Tags: #SW30 #AIAgents #CitizenDeveloper #EnterpriseAI #ClaudeAI #AIStrategy #FutureOfWork

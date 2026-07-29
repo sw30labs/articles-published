@@ -1,31 +1,30 @@
-View Nicolas Cravino’s  graphic link
-Nicolas Cravino
-   • You
-AI Engineer | Cybersecurity | Agentic AI Innovator | Author | 20+ Years in Finance & Consulting
-2mo •  
+View Nicolas Cravino’s  graphic link# The Human-Agent Orchestrator
 
-I should have posted about this last week.
+*The most important part of agent adoption is not the model. It is the operating design that turns a pilot into something an organization can govern.*
 
-"The Human-Agent Orchestrator" came out ten days ago. Pascal Bornet plus eight co-authors plus SME contributors — I'm one of them. The piece I'm closest to is the Orchestration Design Canvas: six layers (Source, Success, Safety, Steering, Switch, Sharpen) that turn "deploy an agent" into something a board can defend.
+I should have posted about this earlier. The Human-Agent Orchestrator came out ten days ago, and it is one of the most practical books I have seen on agent adoption.
 
-Three years of building, breaking, and rebuilding it across real deployments. It's the part of the book most leaders skip — and where most agent failures eventually live.
+I contributed to the book, and the part I am closest to is the Orchestration Design Canvas. It lays out six layers — Source, Success, Safety, Steering, Switch, and Sharpen — that turn “deploy an agent” into something a board can actually defend.
 
-If you're running agents or about to, Part 1 is where I would start.
-https://amzn.to/49p14H4
- 
-The Human-Agent Orchestrator: Leading and Scaling AI-Driven Organizations
-amazon.com
-likecelebratelove
-22
-Alejandro Cravino and 21 others
-3 comments
-1 repost
+That is the point. Three years of building, breaking, and rebuilding agents across real deployments have shown me that most failures do not come from the model. They come from the orchestration layer: the part leaders skip and the part operations teams eventually inherit.
 
-Like
+## Why this matters
 
-Comment
- 
-Repost
- 
-Send
-1,624 impressions
+If you are running agents today, or planning to deploy them soon, Part 1 of the book is the place to start. It moves the conversation away from hype and toward the operational design choices that matter.
+
+The real value of the book is that it gives organizations a structure for answering hard questions:
+
+- what is the source of truth
+- what counts as success
+- how is safety enforced
+- how is the agent steered
+- when should control switch to a human
+- how do you sharpen the workflow over time
+
+## The big takeaway
+
+Agent projects fail less often because the model is weak and more often because the operating design is underdeveloped. The orchestration canvas is useful precisely because it makes those gaps visible.
+
+If you are thinking about scaling AI-driven work inside an organization, this is worth reading.
+
+Book link: https://amzn.to/49p14H4

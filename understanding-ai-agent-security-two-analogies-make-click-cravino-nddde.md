@@ -2,9 +2,9 @@
 
 # [Understanding AI Agent Security: Two Analogies That Make It Click](https://www.linkedin.com/pulse/understanding-ai-agent-security-two-analogies-make-click-cravino-nddde)
 
-Created on 2026-02-21 15:26
+*Created on 2026-02-21 15:26 · Published on 2026-02-21 15:52*
 
-Published on 2026-02-21 15:52
+> Security for AI agents becomes easier to explain when you think in terms of aviation and banking controls.
 
 If you work in cybersecurity - or anywhere near it - you've probably been asked the same questions I get asked all the time: *How do we secure Ai Agents? And* ***how do I explain this to the board****?*
 
@@ -143,7 +143,7 @@ The destination is worth reaching. Let's make sure we get there safely.
 
 ---
 
-**## References**
+## References
 
 1. [[OWASP Top 10 for Agentic Applications (2026)](https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/)]
 2. [[Dynatrace - Building Trust in Agentic AI: Observability-led Action Plan (2026)](https://www.dynatrace.com/news/blog/agentic-ai-report-new-observability-strategy/)]

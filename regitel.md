@@ -1,37 +1,34 @@
-View Nicolas Cravino’s  graphic link
-Nicolas Cravino
-   • You
-AI Engineer | Cybersecurity | Agentic AI Innovator | Author | 20+ Years in Finance & Consulting
-3mo •  
+View Nicolas Cravino’s  graphic link# RegIntel: An AI Agent for Penetration Testing Regulation Intelligence
 
-Keeping up with penetration testing regulations across financial services jurisdictions is a challenge. DORA, CBEST, MAS TRM, CPS 234, PCI DSS - each with different requirements, frequencies, and scope. And they keep changing.
+*Keeping up with penetration testing regulations across jurisdictions is difficult, expensive, and constantly changing. RegIntel tries to make that process more systematic.*
 
-So I built RegIntel - an open-source AI agent system that automatically researches, validates, and maintains a global inventory of pentest regulations across 20 jurisdictions.
+Keeping up with penetration testing regulations across financial services jurisdictions is a challenge. DORA, CBEST, MAS TRM, CPS 234, and PCI DSS all have different requirements, frequencies, and scope. And they keep changing.
 
-How it works: a LangGraph pipeline where specialized agents research via web search, validate findings, and run a mandatory reflection quality gate before anything hits the database. A dual-LLM strategy uses cloud models for accuracy-critical tasks and a local model (Qwen 3.5 122B on Apple Silicon) to keep costs down.
+That is why I built RegIntel: an open-source AI agent system that researches, validates, and maintains a global inventory of pentest regulations across more than 20 jurisdictions.
 
-One command scans the entire landscape:
+## How it works
+
+The system uses a LangGraph pipeline in which specialized agents:
+
+- research through web search
+- validate findings
+- run a mandatory reflection quality gate before anything is written to the database
+
+It also uses a dual-LLM strategy:
+
+- cloud models for accuracy-critical tasks
+- a local model, Qwen 3.5 122B on Apple Silicon, to keep costs down
+
+## The practical workflow
+
+A single command scans the landscape:
+
+```bash
 regitel scan --all
+```
 
-Apache 2.0 licensed:
-https://lnkd.in/egkTc9je
+The project is Apache 2.0 licensed and open for feedback and contributions.
 
-Feedback and contributions welcome.
+Repository: https://lnkd.in/egkTc9je
 
-hashtag#OpenSource hashtag#Cybersecurity hashtag#PenetrationTesting hashtag#AI hashtag#LangGraph hashtag#FinancialServices hashtag#RegTech hashtag#AgenticAI
-GitHub - ai-agents-cybersecurity/pentest-regulatory-intel: AI-powered penetration testing regulatory intelligence system — LangGraph agents, dual LLM (OpenAI + local MLX), 20+ financial services jurisdictions
-github.com
-likelovesupport
-26
-1 comment
-3 reposts
-
-Like
-
-Comment
- 
-Repost
- 
-Send
-2,011 impressions
-View analytics
+Tags: #OpenSource #Cybersecurity #PenetrationTesting #AI #LangGraph #FinancialServices #RegTech #AgenticAI

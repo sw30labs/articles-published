@@ -2,9 +2,9 @@
 
 # [Why the Best AI You'll Ever Have Unrestricted Access To Is the AI You Have Right Now](https://www.linkedin.com/pulse/why-best-ai-youll-ever-have-unrestricted-access-you-right-cravino-ckrye)
 
-Created on 2026-02-24 04:23
+*Created on 2026-02-24 04:23 · Published on 2026-02-24 04:45*
 
-Published on 2026-02-24 04:45
+> The strongest AI advantage may come from using what is available right now, before access becomes more restricted.
 
 Two weeks ago, I rebuilt an entire project as a native Claude skill in just two hours.
 

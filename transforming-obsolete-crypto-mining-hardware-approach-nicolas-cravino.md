@@ -2,9 +2,9 @@
 
 # [Transforming Obsolete Crypto Mining Hardware: A Community-Driven Approach to AI Model Training](https://www.linkedin.com/pulse/transforming-obsolete-crypto-mining-hardware-approach-nicolas-cravino)
 
-Created on 2023-05-09 11:13
+*Created on 2023-05-09 11:13 · Published on 2023-05-09 11:20*
 
-Published on 2023-05-09 11:20
+> Repurposing obsolete mining hardware could turn a sustainability problem into a new path for community-driven AI research.
 
 ### Discovering new possibilities for GPUs and FPGAs in the pursuit of sustainable and impactful AI research.
 

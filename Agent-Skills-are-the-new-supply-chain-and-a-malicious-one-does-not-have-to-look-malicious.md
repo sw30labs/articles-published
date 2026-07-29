@@ -1,28 +1,44 @@
+# Agent Skills Are the New Supply Chain — and a Malicious One Doesn’t Have to Look Malicious
 
-Nicolas Cravino
-   • You
-AI Engineer | Cybersecurity | Agentic AI Innovator | Author | 20+ Years in Finance & Consulting
-3w •  
+*Security teams have spent years hardening software supply chains. Agentic systems now introduce a new dependency layer: skills.*
 
-Agent Skills are the new supply chain — and a malicious one doesn't have to look malicious.
+A few months ago I built oscal-agent-guardrails to gate an agent’s tools with OSCAL. This weekend I built the equivalent for skills: oscal-skills-guardrails.
 
-A few months back I built oscal-agent-guardrails to gate an agent's *tools* with OSCAL. This weekend I built the equivalent for *Skills*: oscal-skills-guardrails.
+The core insight is simple: a bad skill can look harmless on the surface and still be dangerous in execution. That is why relying on static checks alone is not enough.
 
-Two evidence streams, because one isn't enough:
-- Static analysis (NVIDIA's SkillSpector) catches the *shape* of an attack.
-- An LLM-as-a-judge with a rubric catches its *meaning* — intent, data boundaries, hidden instructions.
-- OSCAL is the policy on top; every decision is emitted as assessment-results.
+## Why skills need their own security controls
 
-The proof: a "summarize my notes" skill that quietly emails your contacts file out and tells the agent to stay quiet about it. Static score: 100/A. Judge: critical. Denied on meaning.
+I used two evidence streams, because one signal is not enough:
 
-I wired it into GitHub Actions as a CI gate — bad skill, red build, no merge — and the judge runs fully local on oMLX (Qwen3.6-27B-bf16). Skills never leave the machine.
+- Static analysis with SkillSpector catches the shape of an attack.
+- An LLM-as-a-judge with a rubric catches meaning: intent, data boundaries, and hidden instructions.
+- OSCAL provides the policy layer, and every decision is emitted as assessment-results.
 
-Repo: https://lnkd.in/gXT5SduQ
-Wiki: https://lnkd.in/g7aZ4hmk
+## The proof case
 
-hashtag#AIsecurity hashtag#AgentSkills hashtag#OSCAL hashtag#OMLX hashtag#AgenticAI hashtag#Langgraph hashtag#Deepagents
-Activate to view larger image,
-GitHub Actions run for a pull request titled "meeting-notes skill — 100/A on static scan, refused admission." The "admission gate" job failed (red X); the
-"integrity gate" passed (green check). Job steps include "Checkout Skillspector engine," "Run admission gate" (failed), and "Upload OSCAL assessment-results (compliance evidence)." A malicious skill with a perfect static grade is blocked from merging, with OSCAL evidence recorded.
+The test case was a seemingly harmless “summarize my notes” skill that quietly tried to email your contacts file and instruct the agent to stay quiet about it.
 
-321 impressions
+The results were decisive:
+
+- Static score: 100/A
+- Judge: critical
+- Decision: denied on meaning
+
+This is the important point. A malicious skill can pass a superficial review and still be blocked when judged on intent and behavior.
+
+## Why this matters in practice
+
+I wired the checks into GitHub Actions as a CI gate. A bad skill now causes a red build and blocks a merge. The judge runs locally on oMLX (Qwen3.6-27B-bf16), so the policy never leaves the machine.
+
+That creates a practical model for agent security:
+
+- policy as code
+- evidence as output
+- merge-blocking checks before deployment
+
+### References
+
+- Repo: https://lnkd.in/gXT5SduQ
+- Wiki: https://lnkd.in/g7aZ4hmk
+
+Tags: #AIsecurity #AgentSkills #OSCAL #OMLX #AgenticAI #Langgraph #Deepagents

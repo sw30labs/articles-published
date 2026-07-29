@@ -2,9 +2,9 @@
 
 # [Why Your Agentic AI Pipeline Might Not Need Code](https://www.linkedin.com/pulse/why-your-agentic-ai-pipeline-might-need-code-nicolas-cravino-nhine)
 
-Created on 2026-02-11 04:39
+*Created on 2026-02-11 04:39 · Published on 2026-02-11 22:00*
 
-Published on 2026-02-11 22:00
+> The real shift is not from code to no code, but from infrastructure-heavy orchestration to inference-native execution.
 
 I built *Article Buddy* to solve a personal problem: I write long-form technical articles, and I wanted an AI-powered editorial pipeline that could review my drafts the way a real publishing team would. Not a chatbot. A multi-stage system where specialized personas—a developmental editor, technical reviewers, a market analyst, a copy editor, a QA validator—each take a pass at the manuscript in sequence, improving it at every stage.
 

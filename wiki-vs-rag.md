@@ -1,31 +1,38 @@
+# Wiki vs RAG: Where the Old Approach Still Wins
 
-Nicolas Cravino
-   • You
-AI Engineer | Cybersecurity | Agentic AI Innovator | Author | 20+ Years in Finance & Consulting
-3mo • Edited •  
+*The comparison is not just about retrieval quality. It is also about cost, latency, and the shape of the query.*
 
-Yesterday I posted the 3-way wiki-vs-RAG an obvious 4th arm was missing. 
+Yesterday I posted the three-way comparison between wiki-based retrieval and RAG. An obvious fourth option was missing.
 
-**qmd**— Shopify's CEO Tobi Lütke building a local-first search in the open. BM25 + on-device embeddings + local reranker. Zero API per query. 
+That fourth approach is qmd: Shopify CEO Tobi Lütke’s local-first search stack, built in the open. It combines BM25, on-device embeddings, and a local reranker with zero API cost per query.
 
-Added it, re-ran the same 30 queries, same judge:
-- Cheapest: ~922 tok · $0.0052 · no embedding API.
-- Lowest quality overall: 3.56 vs. 4.45+.
+## What changed when I added qmd
 
-**By category**: 
- - Narrow: tied (~4.9).
- - Branch: collapses to 2.83.
- - Cross-branch: collapses to 3.37.
+I re-ran the same 30 queries with the same judge.
 
-**Vs. agentic-RAG**: 24 losses, 0 wins, 6 ties.
+The results were clear:
 
-**Failure**: QMD's reranker ranks peripheral stubs above branch landing pages.
- 
-QMD is a real Pareto point for grep-shaped questions — not a drop-in for RAG when synthesis matters. For lookups it's ~30% cheaper with zero API. The moment the query spans branches, agentic-RAG still wins.
+- Cheapest: about 922 tokens and $0.0052 per run, with no embedding API
+- Lowest quality overall: 3.56 versus 4.45+ for the stronger systems
 
-Repo in the comments.
-Activate to view larger image,
-chart, radar chart
+## By category
 
-483 impressions
-View analytics
+- Narrow queries: roughly tied at about 4.9
+- Branch queries: dropped to 2.83
+- Cross-branch queries: dropped to 3.37
+
+## Against agentic RAG
+
+Against agentic RAG, the results were:
+
+- 24 losses
+- 0 wins
+- 6 ties
+
+## The real conclusion
+
+The failure mode is important: qmd’s reranker tends to rank peripheral stubs above branch landing pages.
+
+That makes qmd a genuine Pareto point for grep-shaped questions, but not a drop-in replacement for RAG when synthesis matters. For lookups, it is about 30 percent cheaper and uses zero API calls. The moment the query spans branches, agentic RAG still wins.
+
+This is a useful reminder that retrieval design is not one-size-fits-all. Different architectures fit different query patterns better than others.

@@ -1,40 +1,41 @@
+# Ralph, Autoresearch, and Rubrics: What Is Actually Different?
 
-Nicolas Cravino
-   • You
-AI Engineer | Cybersecurity | Agentic AI Innovator | Author | 20+ Years in Finance & Consulting
-2w •  
+*The overlap between these loops is bigger than the differences, but the evaluator is what really changes the behavior.*
 
-I've been asked the same question a few times now - "you keep talking about these loops. Ralph, autoresearch, rubrics… what's actually the difference?"
+I have been asked the same question repeatedly: “You keep talking about Ralph, autoresearch, and rubrics. What is actually the difference?”
 
-Fair question. So I drew it.
+The short answer is that all three are iterations of the same core pattern: an agent loop, external state, and a human who sets the goal once and then steps back. The intelligence is not only in the model. It is in the loop plus the check.
 
-The overlap is bigger than the differences. All three are the same animal at the core: an iterative agent loop, durable state kept outside the context window, human sets the goal once and steps back. The intelligence isn't the model - it's the loop plus the check.
+The real axis of difference is who holds the evaluator: a deterministic check or another LLM.
 
-The axis that actually matters: who holds the evaluator - a deterministic check, or another LLM.
+## Ralph loop
 
-Ralph (Wiggum) loop - fresh context every iteration, one unit of work at a time, runs until the backlog is empty. Use it when you have a spec or PRD and the work decomposes. Fresh context is the feature: no rot, no drift.
+The Ralph loop gives the agent fresh context at each iteration and works one unit of work at a time until the backlog is empty.
 
-Karpathy-style autoresearch - keep/rollback against one FIXED metric. Use it when you can measure the thing you want (latency, accuracy, cost) and want the loop to discover gains you never specified. The metric is the safety rail.
+Use it when you have a spec or PRD and the work decomposes cleanly. Fresh context is the key feature because it reduces drift and rot.
 
-RubricMiddleware - LLM-as-judge, per-criterion feedback. Use it when quality is fuzzy and no metric exists - writing, analysis, taste. Powerful, but judges drift, so keep it bounded and in-session.
+## Karpathy-style autoresearch
 
-And they compose. Ralph with a rubric gating each iteration - build to a spec AND a quality bar. Autoresearch inside a Ralph backlog for the hot paths. My default hybrid: LLM proposes, deterministic check disposes.
+Autoresearch keeps and rolls back against a fixed metric. Use it when you can measure what matters — latency, accuracy, cost, or another concrete objective — and want the system to discover gains you did not specify in advance.
 
-Rule of thumb - if the check can be code, make it code. That's the version you can safely run overnight. If it can't, put an LLM in the judge seat, on a short leash.
+The metric acts as the safety rail.
+
+## RubricMiddleware
+
+Rubric-based loops use an LLM-as-a-judge with per-criterion feedback. Use them when quality is fuzzy and there is no clean metric: writing, analysis, taste, or nuanced evaluation.
+
+These are powerful, but they are more prone to drift, so they should stay bounded and in-session.
+
+## How they compose
+
+They work well together.
+
+- Ralph with a rubric can build toward a spec and a quality bar.
+- Autoresearch can run inside a Ralph backlog for the highest-impact paths.
+- My default hybrid is simple: the LLM proposes, and the deterministic check disposes.
+
+## A practical rule of thumb
+
+If the check can be coded, make it code. That is the version you can safely run overnight. If it cannot, put an LLM in the judge seat, but keep it on a short leash.
 
 What loops are you running?
-
-hashtag#AgenticAI hashtag#AIAgents hashtag#AgenticLoops hashtag#AIEngineering hashtag#ContextEngineering
-Venn Diagram here depicted.
-
-
-Discovery
-
-549
-Impressions
-In-network (followers and connections)
-46%
-Out-of-network
-54%
-329
-Members reached

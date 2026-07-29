@@ -1,46 +1,53 @@
+# Kimi K3 and the New Question: Which Model Is Best and Safe Enough to Deploy?
 
-Nicolas Cravino
-  • You
-AI Engineer | Cybersecurity | Agentic AI Innovator | Author | 20+ Years in Finance & Consulting
-1w • 
+*Open-weight models are becoming more capable, and that increases the urgency of trust and verification.*
 
-Kimi K3 release was the trigger for me this week. The question is no longer only “which model is best?”
-It’s “which model is best and safe enough to deploy?”
+Kimi K3 was the trigger for this week’s thinking. The question is no longer only “which model is best?” It is now: “which model is best and safe enough to deploy?”
 
-Kimi K3 a frontier-class open-weight system doesn’t just move the leaderboard—it multiplies the download-and-deploy surface. Capability and integrity risk arrive together. I welcome the competition. I also want the assurance side to keep up.
+Kimi K3 is a frontier-class open-weight system. It does not just move the leaderboard; it expands the download-and-deploy surface. Capability and integrity risk arrive together.
 
-After many months of personal work, I’m open-sourcing:
+I welcome the competition. I also want the assurance side to keep up.
 
-TSLIT-DSPy v0.2 : Time-Shift LLM Integrity Testing + DSPy-powered analysis
+## Why I am open-sourcing TSLIT-DSPy v0.2
 
-https://lnkd.in/gkmSvkcG
+After many months of personal work, I am releasing TSLIT-DSPy v0.2: Time-Shift LLM Integrity Testing plus DSPy-powered analysis.
 
-A compiled detector for affiliation bias, temporal logic bombs, and combined threats. MIPROv2 prompts. Autoresearch-style (Karpathy's loop) to fight AI with AI. Built on TSLIT v0.1.
+The project is a compiled detector for:
 
-There’s also a draft whitepaper in the repo (whitepaper/). Critique, co-review, harden the claims.
+- affiliation bias
+- temporal logic bombs
+- combined threats
 
-Two reasons this goes public now:
+It uses MIPROv2 prompts and an autoresearch-style loop to fight AI with AI. It is built on TSLIT v0.1.
 
-1. Open weights are accelerating. K3-class releases make “trust but verify” urgent for anyone who will actually run these models. I want TSLIT to evolve at that same pace—not freeze as a personal prototype.
+There is also a draft whitepaper in the repository under the whitepaper folder. Feedback, critique, and hardening are welcome.
 
-2. What slowed me wasn’t lack of ideas—it was the Anthropic bill. Full MIPROv2 + autoresearch-style runs on frontier APIs burn cash really fast. Self-improvement in this stack is real—and compute-bound.
+## Why now
 
-Run the loop. Clone the repo, point the agent at the experiment runner, generate harder training cases, recompile, open a PR. The outer loop is designed for that.
+Two reasons pushed this public now.
 
-Model risk, red team, AI security, labs with spare capacity: clone it, break it, run autoresearch, push the frontier of the detector.
+1. Open weights are accelerating. K3-class releases make “trust but verify” urgent for anyone who will actually run these models. I want TSLIT to evolve at the same pace rather than remain a personal prototype.
 
-I don’t want TSLIT as a museum piece. I want it to evolve—with open weights, and with people who can actually afford the self-improvement loop.
+2. What slowed me was not a lack of ideas but the Anthropic bill. Full MIPROv2 and autoresearch-style runs on frontier APIs burn cash very quickly. Self-improvement in this stack is real, and it is compute-bound.
 
-Trust isn’t a property of origin. It’s a property of verifiability.
+## How to engage
 
-#AISecurity #ModelRisk #OpenSource #LLM #TrustworthyAI #KimiK3
-GitHub - sw30labs/tslit-dspy-ar: DSPy-powered threat detection for open-weight LLMs — refactored pipeline for backdoor, affiliation bias, and temporal logic bomb detection.GitHub - sw30labs/tslit-dspy-ar: DSPy-powered threat detection for open-weight LLMs — refactored pipeline for backdoor, affiliation bias, and temporal logic bomb detection.
-github.com
+The loop is designed to be run in practice:
 
-10
+- clone the repository
+- point the agent at the experiment runner
+- generate harder training cases
+- recompile
+- open a pull request
 
+The outer loop is built for exactly that workflow.
 
-1
+## The core point
 
+Trust is not a property of origin. It is a property of verifiability.
 
-787 impressions
+If you are working on model risk, red teaming, AI security, or simply want to push the frontier of open-weight evaluation, the repository is meant to be used, broken, and improved.
+
+Repository: https://lnkd.in/gkmSvkcG
+
+Tags: #AISecurity #ModelRisk #OpenSource #LLM #TrustworthyAI #KimiK3
